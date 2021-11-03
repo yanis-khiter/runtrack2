@@ -1,17 +1,17 @@
 <?php
 
-$var=0;
+$om=0;
 
-while($var<=1337)
+while($om<=1337)
 
 	{
 
-if($var==26 ||$var==37 || $var==88 ||$var==1111 ||$var==3233)
+if($om==26 ||$om==37 || $om==88 ||$om==1111 ||$om==3233)
 {    }
 
-else {echo $var."<br/>";}
+else {echo $om."<br/>";}
 
-$var++;
+$om++;
 
 	}
 
