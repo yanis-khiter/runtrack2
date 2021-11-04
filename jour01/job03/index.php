@@ -45,25 +45,25 @@ $flottante = 2.5 ;
   <tr>
     <td>Booléen</td>
     <td>MyBool</td>
-    <td> <?= $booleen ?> </td>
+    <td> <?php echo $booleen ?> </td>
   </tr>
 
   <tr>
     <td>Entier</td>
     <td>Chiffre</td>
-    <td> <?= $entier ?> </td>
+    <td> <?php echo $entier ?> </td>
   </tr>
 
   <tr>
     <td>Chaîne</td>
     <td>Nom</td>
-    <td> <?= $chaine ?> </td>
+    <td> <?php echo $chaine ?> </td>
   </tr>
 
   <tr>
     <td>Flottante</td>
     <td>Virgule</td>
-    <td> <?= $flottante ?> </td>
+    <td> <?php echo $flottante ?> </td>
   </tr>
 
 </table>
