@@ -10,7 +10,7 @@ if   ($nombre[$x]%2 == 0){
 }
 
 elseif ($nombre[$x]%2 != 0){
-    echo $nombre[$x].' est inpaire' .'<br/>';
+    echo $nombre[$x].' est impaire' .'<br/>';
 }
 
 else{echo $nombre[$x].'<br>';
