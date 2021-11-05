@@ -11,7 +11,13 @@ $str = "Les choses que l'on possede finissent par nous posseder.";
 
 for($i = -1 ; isset($str[$i]) == true; $i--){
 
-echo $str[$i];
+    echo $str[$i];
+
+for($x = -1 ; isset($str[$x]) == false; $x++){
+
+    echo $str[$s];
+
+}
 
 }
 
