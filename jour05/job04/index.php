@@ -45,3 +45,4 @@ echo calcule (160,'+', 50);
 
 // On peux aussi utiliser la méthode 'Switch-Case'
 
+
