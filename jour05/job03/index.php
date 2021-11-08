@@ -7,11 +7,11 @@ valeur de retour et affichez la. -->
 <?php
 
 
-function 'gethello' {
+function gethello () {
 
 
-return ('Hello LaPlateforme!')
+return ('Hello LaPlateforme!') ;
 
 }
 
-echo 'gethello'
+echo 'gethello' ;
