@@ -8,17 +8,34 @@ Ajoutez un bouton nommé “reset” qui permet de réinitialiser la liste. -->
 <?php
 
 session_start();
-var_dump($_SESSION)
 
+if (isset($_POST['prenom']))
+
+{
+   $_SESSION['prenoms'] .= ' '. $_POST['prenom'];
+
+   echo $_SESSION['prenoms'];
+}
+
+if (isset($_POST['reset'])) {
+    
+        
+    unset ($_SESSION['prenoms']);
+            
+}
+           
 ?>
 
-<form action=";/index.php" method="post">
-        
-    <label for="last-name">prenom </label>
-    <input type="text" id="prenom" name="prenom">
-    <input type="submit" name="reset" value="envoyer">
-    <input type="submit" name="reset" value="reset">
+<!DOCTYPE html>
+<html>
+    
+<form action="./index.php" method="post">
 
-</form>
+            <label for="last-name">prénom </label>
+            <input type="text" id="prenom" name="prenom">
+            <input type="submit" value="envoyer">
+
+            <input type="submit" name="reset" value="reset">
+    </form>
 
 
