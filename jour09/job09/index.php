@@ -2,11 +2,11 @@
 
 $bdd = mysqli_connect('localhost','root','', 'jour08');
 mysqli_set_charset($bdd ,'utf8');
-$requete = mysqli_query($bdd,"SELECT SUM(capacite) FROM `salles` ");
+$requete = mysqli_query($bdd,"SELECT SUM(superficie) FROM `etage` ");
 
-$salles = mysqli_fetch_all($requete,MYSQLI_ASSOC);
+$etage = mysqli_fetch_all($requete,MYSQLI_ASSOC);
 
-var_dump($salles);
+var_dump($etage);
 
 ?>
 
@@ -28,7 +28,7 @@ var_dump($salles);
     <thead>
             <tr>
 
-                <th>capacite_totale</th>
+                <th>superficie_totale</th>
                
             </tr>
 
@@ -38,9 +38,9 @@ var_dump($salles);
 
 <?php
 
-foreach($salles as $salle){
+foreach($etage as $etages){
 
-    echo '<tr><td>' .$salle['SUM(capacite)'].'</td></tr>';
+    echo '<tr><td>' .$etages['SUM(superficie)'].'</td></tr>';
  
 }
 
